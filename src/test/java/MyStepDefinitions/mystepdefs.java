@@ -25,6 +25,7 @@ public class mystepdefs {
     WebDriver driver;
     WebDriverWait wait;
     mailLogic mL = new mailLogic();
+    public String Used = "THISISATESTIPROMISE";
 
     private void sendKeys(WebDriver driver, By by, String text) {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -60,8 +61,6 @@ public class mystepdefs {
             emailField.sendKeys("");
         }
     }
-
-    public String Used = "THISISATESTIPROMISE";
 
     @Given("I have input a {string}")
     public void iHaveInputA(String username) {
